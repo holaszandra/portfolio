@@ -529,6 +529,72 @@ section {
     border-radius: var(--border-radius-sm);
 }
 
+/* Impact Section */
+.impact-section {
+    padding: var(--spacing-2xl) 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #1a3d2e 100%);
+}
+
+.impact-section .section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.impact-section .section-label {
+    color: var(--color-secondary);
+}
+
+.impact-section .section-title {
+    color: var(--color-white);
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.impact-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.impact-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+}
+
+.impact-metric {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.impact-label {
+    display: block;
+    font-size: 1rem;
+    color: var(--color-white);
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .impact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .impact-metric {
+        font-size: 2rem;
+    }
+}
+
 /* Learning Section */
 .learning-section {
     background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
